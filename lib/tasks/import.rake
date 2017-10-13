@@ -32,7 +32,7 @@ task :import_votes => :environment do
             Vote.create!(number: result[:number], validity: result[:Validity], campaign_id: campaign.id, candidate_id: candidate.id)
           end
         rescue
-          puts 'there is an error is the test file'
+          puts 'there is an error in the test file'
         end
       end
   end
